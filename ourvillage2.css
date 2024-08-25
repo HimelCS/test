@@ -1,0 +1,401 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    clear:both;
+    content: '';
+    display: block;
+}
+
+[class*="col-"]{
+    float:left;
+    padding: 15px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+header{
+    background: rgb(255, 203, 203);
+    padding: 0% 1%;
+    text-align: center;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    padding: 0 20px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: rgb(247, 113, 113);
+}
+
+nav ul li a:hover{
+    background-color: rgb(255, 203, 203);
+    box-shadow: 0 0 13px red;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdowncontent a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    display: block;
+    background: rgb(247, 113, 113);
+}
+
+.dropdowncontent{
+    position: absolute;
+    width: 150px;
+    left:148px;
+    top:50px;
+    display: none;
+}
+
+.dropdowncontent a:hover{
+    background-color: rgb(255, 203, 203);
+}
+
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+
+#banner{
+    height: 500px;
+    background-image: url("b1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannercont{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.bannercont h1{
+    width:100%;
+    margin: 15px auto;
+    font-size: 2rem;
+    background: rgba(103, 245, 255,0.884);
+    color: black;
+}
+
+.bannercont p{
+    text-align: justify;
+    width:100%;
+    margin: 15px auto;
+    font-size: 1.5rem;
+    background: rgba(103, 245, 255,0.884);
+    color: black;
+}
+
+#contact{
+    height: 60vh;
+    padding: 1%;
+    background-color: #595b83;
+}
+
+.map{
+    width:100%;
+    height: 250px;
+}
+
+.contactdit{
+    color:white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+footer{
+    padding: 1%;
+    color: white;
+    background: #060930;
+}
+
+footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.social-manu{
+    text-align: center;
+}
+
+.btn{
+    background: transparent;
+    border: 0px;
+}
+
+.sty{
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 10px;
+    transition: 0.4s;
+    text-align: center;
+}
+/*CSS FOR ADMINS*/
+.cardcontainer{
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.card{
+    margin: 10px 0px;
+    width:150px;
+    box-shadow: 1px 2px 4px rgb(198, 198, 198);
+}
+
+.card img{
+    width: 100%;
+}
+
+.name{
+    padding: 0px 3px;
+    font-size: 15px;
+}
+
+/*for blood group*/
+.ccont{
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.ca{
+    padding: 5px;
+    margin: 10px 0px;
+    width:200px;
+    background-color: rgb(255, 215, 215);
+    box-shadow: 1px 2px 4px rgb(139, 139, 139);
+}
+
+@media (min-width: 576px){
+
+    .col-sm-1 {
+        width:8.33%;
+    }
+
+    .col-sm-2 {
+        width:16.66%;
+    }
+
+    .col-sm-3 {
+        width:25%;
+    }
+
+    .col-sm-4 {
+        width:33.33%;
+    }
+
+    .col-sm-5 {
+        width:41.66%;
+    }
+
+    .col-sm-6 {
+        width:50%;
+    }
+
+    .col-sm-7 {
+        width:58.33%;
+    }
+
+    .col-sm-8 {
+        width:66.66%;
+    }
+
+    .col-sm-9 {
+        width:75%;
+    }
+
+    .col-sm-10 {
+        width:83.33%;
+    }
+
+    .col-sm-11 {
+        width:91.66%;
+    }
+
+    .col-sm-12 {
+        width:100%;
+    }
+}
+
+@media (min-width: 768px){
+
+    .dropdown{
+        position: relative;
+    }
+    
+    .dropdowncontent a{
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+        display: block;
+        background: rgb(247, 113, 113);
+    }
+    
+    .dropdowncontent{
+        position: absolute;
+        width: 200px;
+        left:150px;
+        top:50px;
+        display: none;
+    }
+
+    .col-md-1 {
+        width:8.33%;
+    }
+
+    .col-md-2 {
+        width:16.66%;
+    }
+
+    .col-md-3 {
+        width:25%;
+    }
+
+    .col-md-4 {
+        width:33.33%;
+    }
+
+    .col-md-5 {
+        width:41.66%;
+    }
+
+    .col-md-6 {
+        width:50%;
+    }
+
+    .col-md-7 {
+        width:58.33%;
+    }
+
+    .col-md-8 {
+        width:66.66%;
+    }
+
+    .col-md-9 {
+        width:75%;
+    }
+
+    .col-md-10 {
+        width:83.33%;
+    }
+
+    .col-md-11 {
+        width:91.66%;
+    }
+
+    .col-md-12 {
+        width:100%;
+    }
+}
+
+@media (min-width: 992px){
+
+    .dropdown{
+        position: relative;
+    }
+    
+    .dropdowncontent a{
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+        display: block;
+        background: rgb(247, 113, 113);
+    }
+    
+    .dropdowncontent{
+        position: absolute;
+        width: 200px;
+        left:375px;
+        top:50px;
+        display: none;
+    }
+
+    .col-lg-1 {
+        width:8.33%;
+    }
+
+    .col-lg-2 {
+        width:16.66%;
+    }
+
+    .col-lg-3 {
+        width:25%;
+    }
+
+    .col-lg-4 {
+        width:33.33%;
+    }
+
+    .col-lg-5 {
+        width:41.66%;
+    }
+
+    .col-lg-6 {
+        width:50%;
+    }
+
+    .col-lg-7 {
+        width:58.33%;
+    }
+
+    .col-lg-8 {
+        width:66.66%;
+    }
+
+    .col-lg-9 {
+        width:75%;
+    }
+
+    .col-lg-10 {
+        width:83.33%;
+    }
+
+    .col-lg-11 {
+        width:91.66%;
+    }
+
+    .col-lg-12 {
+        width:100%;
+    }
+}
